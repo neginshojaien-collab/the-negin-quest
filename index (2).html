@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0a0507">
+<title>راز نگین 💎 | ماجراجویی مخصوص حسام</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070405;--ink:#f7ead0;--red:#d7263d;--red2:#8f0f23;--gold:#e6b655;--gold2:#ffe9a8;--line:#e6b65566;--panel:#120a0d}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100dvh;font-family:Vazirmatn,Tahoma,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 50% -10%,#5a0f1c 0,transparent 55%),radial-gradient(circle at 90% 100%,#3d0a14 0,transparent 45%),var(--bg);display:grid;place-items:center;padding:16px 12px 24px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-20%;z-index:0;pointer-events:none;background:radial-gradient(circle at 25% 35%,#d7263d33 0,transparent 32%),radial-gradient(circle at 78% 70%,#e6b65526 0,transparent 30%);animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(6%,-5%) scale(1.15)}}
+#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.app{width:min(100%,510px);position:relative;z-index:1}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--gold);padding:0 8px 12px;font-size:12px}
+.top b{font-size:14px;letter-spacing:.06em;text-shadow:0 0 14px #e6b65588}
+.sound{border:1px solid var(--line);color:var(--gold);background:#00000066;border-radius:20px;padding:5px 12px}
+.frame{background:repeating-linear-gradient(135deg,#ffffff05 0 2px,transparent 2px 14px),linear-gradient(160deg,#1a0a0f 0,#0d0608 55%,#1b0a10);border:1px solid var(--gold);border-radius:26px;box-shadow:0 0 0 3px #000,0 0 0 4px #e6b65555,0 30px 80px #000,0 0 70px #d7263d30;min-height:620px;padding:22px 17px 26px;text-align:center;position:relative;overflow:hidden}
+.frame:before{content:"";position:absolute;inset:7px;border:1px solid #e6b65538;border-radius:20px;pointer-events:none}
+.frame:after{content:"";position:absolute;left:12%;right:12%;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold2),transparent);filter:drop-shadow(0 0 6px var(--gold))}
+.frame.hit{animation:frameHit .4s}
+@keyframes frameHit{25%{transform:translateX(-6px)}50%{transform:translateX(6px);box-shadow:0 0 0 3px #000,0 0 0 4px #d7263d,0 30px 80px #000,0 0 90px #d7263d99}75%{transform:translateX(-3px)}}
+.progress{height:7px;background:#2a1519;border-radius:99px;overflow:hidden;margin:0 9px 19px;border:1px solid #e6b65533}
+.progress>span{display:block;width:16.67%;height:100%;background:linear-gradient(90deg,var(--gold),var(--red));box-shadow:0 0 12px var(--gold);transition:width .6s}
+.page{display:none;position:relative}
+.page.active{display:block;animation:enter .8s cubic-bezier(.2,.8,.2,1)}
+@keyframes enter{from{opacity:0;transform:scale(.96) translateY(10px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.curtain{position:fixed;inset:0;z-index:50;pointer-events:none;background:radial-gradient(circle at center,#5a0f1c 0,#000 70%);transform:scaleX(0);display:grid;place-items:center}
+.curtain:after{content:"💎";font-size:54px;opacity:0;filter:drop-shadow(0 0 22px var(--gold))}
+.curtain.play{animation:curtain .95s cubic-bezier(.7,0,.3,1) forwards}
+.curtain.play:after{animation:gem .95s forwards}
+@keyframes curtain{0%{transform:scaleX(0);transform-origin:right}45%{transform:scaleX(1);transform-origin:right}50%{transform:scaleX(1);transform-origin:left}100%{transform:scaleX(0);transform-origin:left}}
+@keyframes gem{30%{opacity:0;transform:scale(.4)}45%,55%{opacity:1;transform:scale(1)}80%{opacity:0;transform:scale(1.4)}100%{opacity:0}}
+.tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;background:#000;border:1px solid var(--gold);color:var(--gold2);border-radius:99px;padding:6px 14px;margin-bottom:14px;box-shadow:0 0 16px #e6b65540}
+h1,h2{font-family:Lalezar,Vazirmatn,Tahoma,sans-serif;font-weight:400;line-height:1.6;margin:6px 0 10px;background:linear-gradient(100deg,#b8862d,var(--gold2),var(--gold),#fff3c4,#b8862d);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite;filter:drop-shadow(0 2px 10px #d7263d55)}
+@keyframes shine{to{background-position:-250% 0}}
+h1{font-size:clamp(27px,7.4vw,36px)}
+h2{font-size:clamp(23px,6.4vw,29px)}
+p{line-height:2.1;font-size:14px;margin:8px auto 13px;color:#f1dcb5}
+.lead{max-width:400px}
+.em{color:#ff6378;font-weight:900;text-shadow:0 0 14px #d7263d88}
+.btn{border:1px solid var(--gold);border-radius:16px;padding:13px 17px;min-height:50px;font-weight:900;color:#fff6df;background:linear-gradient(110deg,var(--red2),var(--red) 55%,#a3162b);box-shadow:0 8px 26px #d7263d55,inset 0 1px 0 #ffffff33;transition:transform .2s,box-shadow .2s;display:block;width:100%;margin:12px auto 0;position:relative;overflow:hidden;text-shadow:0 1px 6px #0008}
+.btn:after{content:"";position:absolute;top:0;bottom:0;width:40%;left:-60%;background:linear-gradient(100deg,transparent,#ffffff55,transparent);transform:skewX(-20deg);animation:sweep 3.6s ease-in-out infinite}
+@keyframes sweep{60%,100%{left:130%}}
+.btn:hover{box-shadow:0 10px 34px #d7263d99,0 0 0 1px var(--gold2)}
+.btn:active{transform:scale(.97)}
+.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--line);box-shadow:none}
+.btn.alt:after{display:none}
+.choices{display:grid;gap:10px;margin:18px auto;max-width:420px}
+.choice{border:1px solid var(--line);background:linear-gradient(#1c0d12,#12090c);border-radius:15px;padding:13px 12px;color:var(--ink);font-weight:800;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s,background .2s}
+.choice:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 6px 20px #d7263d44}
+.choice.selected{background:linear-gradient(110deg,#5a0f1c,#8f0f23);border-color:var(--gold2);box-shadow:0 0 22px #d7263d88,inset 0 0 0 1px #e6b65555;color:#fff}
+.bubble{background:#0c0608cc;border:1px solid #e6b65540;border-inline-start:3px solid var(--red);border-radius:16px;padding:13px 15px;line-height:2;font-size:13px;min-height:55px;margin:12px auto;color:#f1dcb5;white-space:pre-line}
+.hidden{display:none!important}
+.statline{display:flex;justify-content:space-between;font-size:13px;font-weight:800;margin:13px 4px 8px;color:var(--gold)}
+.statline b{color:var(--gold2);text-shadow:0 0 10px var(--gold)}
+.timebar{height:6px;background:#2a1519;border-radius:9px;overflow:hidden;margin:0 4px 12px}
+.timebar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--red),var(--gold));transition:width 1s linear;box-shadow:0 0 10px var(--red)}
+.arena{position:relative;height:300px;border:2px dashed #e6b65577;border-radius:22px;background:radial-gradient(circle at center,#2b0c15,#0a0507 75%);box-shadow:inset 0 0 50px #000,0 0 30px #d7263d22;overflow:hidden;touch-action:manipulation}
+.item{position:absolute;border:1.5px solid var(--gold);background:radial-gradient(circle at 30% 25%,#3d1b22,#150a0d);border-radius:50%;width:56px;height:56px;display:grid;place-items:center;font-size:29px;box-shadow:0 0 16px #e6b65577;animation:pop .25s both,bob 1.1s ease-in-out .25s infinite}
+.item.gem{border-color:#bfeaff;box-shadow:0 0 20px #7fd6f5aa}
+.item.bad{border-color:var(--red);box-shadow:0 0 18px #d7263dcc}
+@keyframes pop{from{transform:scale(.2)}to{transform:scale(1)}}
+@keyframes bob{50%{margin-top:-5px}}
+.pts{position:absolute;font-weight:900;font-size:22px;pointer-events:none;z-index:3;animation:ptsUp .8s forwards;text-shadow:0 0 12px currentColor}
+.pts.pos{color:var(--gold2)}.pts.neg{color:#ff5a6e}
+@keyframes ptsUp{to{transform:translateY(-46px) scale(1.3);opacity:0}}
+.tiny{font-size:12px;color:#b79a6a}
+.tiny a{color:var(--gold)}
+.vault{position:relative;width:132px;height:132px;margin:6px auto 4px;display:grid;place-items:center}
+.v-glow{position:absolute;inset:14px;border-radius:50%;background:radial-gradient(circle,#ffe9a8,#e6b655 40%,transparent 70%);opacity:0;transform:scale(.3);transition:all .9s}
+.v-gem{position:absolute;font-size:46px;opacity:0;transform:scale(.3);transition:all .9s .2s;filter:drop-shadow(0 0 14px #bfeaff)}
+.v-door{position:relative;width:118px;height:118px;border-radius:50%;background:conic-gradient(from 20deg,#6d4a14,var(--gold2),#8a6420,var(--gold),#6d4a14,var(--gold2),#6d4a14);padding:7px;box-shadow:0 0 30px #e6b65566,0 0 60px #d7263d33;transform-origin:left center;transition:transform 1s cubic-bezier(.6,0,.2,1),opacity 1s;display:grid;place-items:center}
+.v-door:before{content:"";position:absolute;inset:7px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2c1017,#0a0507)}
+.v-ring{position:absolute;inset:14px;border-radius:50%;border:3px dotted var(--gold);animation:spin 22s linear infinite}
+.v-dial{position:absolute;inset:30px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;animation:spin 9s linear infinite reverse}
+.v-dial i{position:absolute;top:-6px;width:8px;height:8px;background:var(--red);border-radius:50%;box-shadow:0 0 10px var(--red)}
+.v-lock{position:relative;font-size:28px;transition:opacity .4s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.vault.wrong .v-door{animation:vshake .5s}
+@keyframes vshake{20%{transform:rotate(-8deg)}40%{transform:rotate(8deg)}60%{transform:rotate(-5deg)}80%{transform:rotate(4deg)}}
+.vault.open .v-door{transform:perspective(500px) rotateY(-75deg);opacity:.25}
+.vault.open .v-glow{opacity:.9;transform:scale(1.5)}
+.vault.open .v-gem{opacity:1;transform:scale(1)}
+.vault.open .v-lock{opacity:0}
+.pin{font-size:24px;letter-spacing:6px;text-align:center;width:95%;border:2px solid var(--line);border-radius:16px;padding:10px;direction:ltr;background:#0a0507;color:var(--gold2);box-shadow:inset 0 0 20px #000}
+.pin:focus{border-color:var(--gold);box-shadow:0 0 22px #e6b65566}
+.question{font-size:17px;font-weight:900;color:var(--gold2)}
+.gold{color:var(--gold)}
+.letter{background:linear-gradient(#1d0c11,#120709);border:1px solid #e6b65588;border-radius:20px;padding:16px;margin:15px auto;box-shadow:inset 0 0 0 4px #0d0608,inset 0 0 0 5px #e6b65544,0 0 34px #d7263d2a}
+.letter p{font-size:14px}
+.note{width:100%;min-height:90px;resize:vertical;border:1px solid var(--line);border-radius:14px;padding:12px;text-align:right;background:#0a0507;color:var(--ink)}
+.note::placeholder,.pin::placeholder{color:#8a6c4a}
+.spark{position:fixed;pointer-events:none;z-index:40;animation:up 3s linear forwards;font-size:25px}
+@keyframes up{to{opacity:0;transform:translateY(-105vh) rotate(25deg)}}
+.miniresult{font-size:13px;font-weight:800;color:var(--gold);min-height:23px;margin:10px 0 2px}
+.foot{text-align:center;color:#8a6c4a;font-size:11px;margin:13px}
+.confetti{font-size:50px;animation:float 3s infinite}
+.negin{position:relative;display:block;margin:0 auto;isolation:isolate}
+.negin.big{width:min(100%,278px);height:280px;margin-bottom:15px;animation:float 4s ease-in-out infinite;filter:drop-shadow(0 0 24px #d7263d66)}
+.negin.small{width:96px;height:96px;margin:2px auto 8px;filter:drop-shadow(0 0 14px #d7263d77)}
+@keyframes float{50%{transform:translateY(-6px)}}
+.negin.big:before{content:"";position:absolute;inset:-6px;z-index:-1;border-radius:30px;background:linear-gradient(110deg,var(--gold),#fff2c0,var(--red),var(--gold));background-size:300% 100%;animation:ring 5s linear infinite}
+.negin.small:before{content:"";position:absolute;inset:-4px;z-index:-1;border-radius:50%;background:linear-gradient(110deg,var(--gold),#fff2c0,var(--red),var(--gold));background-size:300% 100%;animation:ring 5s linear infinite}
+@keyframes ring{to{background-position:-300% 0}}
+.negin img,.negin .fb{display:block;width:100%;height:100%;border:3px solid #0a0507;object-fit:cover;object-position:top;background:linear-gradient(160deg,#3d0a14,#14080c)}
+.negin.big img,.negin.big .fb{border-radius:24px}
+.negin.small img,.negin.small .fb{border-radius:50%}
+.negin:not(.noimg) .fb,.negin.noimg img{display:none}
+.negin .badge{position:absolute;top:-10px;left:-8px;font-size:30px;line-height:1;animation:pop .3s both;filter:drop-shadow(0 3px 8px #000)}
+.negin.small .badge{font-size:22px;top:-8px;left:-10px}
+.negin .badge:empty{display:none}
+.fb .wig,.fb .m{display:none}
+.negin[data-mood="happy"] .m-happy,.negin[data-mood="love"] .m-happy,.negin[data-mood="sad"] .m-sad,.negin[data-mood="cheer"] .m-open,.negin[data-mood="judge"] .m-flat{display:block}
+.negin[data-mood="judge"] .wig{display:block}
+.fb .bl{transform-origin:78px 96px}.fb .br{transform-origin:122px 96px}
+.negin[data-mood="sad"] .bl{transform:rotate(18deg)}.negin[data-mood="sad"] .br{transform:rotate(-18deg)}
+.negin[data-mood="sad"] img,.negin[data-mood="sad"] .fb{animation:shake .5s}
+.negin[data-mood="cheer"] img,.negin[data-mood="cheer"] .fb{animation:hop .5s}
+.negin[data-mood="love"] img,.negin[data-mood="love"] .fb{animation:beat 1.2s ease-in-out 2}
+@keyframes shake{20%{transform:translateX(-7px) rotate(-2deg)}40%{transform:translateX(7px) rotate(2deg)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+@keyframes hop{40%{transform:translateY(-12px) scale(1.04)}}
+@keyframes beat{50%{transform:scale(1.06)}}
+@media(max-width:380px){.frame{padding:18px 12px}.negin.big{height:240px;width:240px}.arena{height:250px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas><div class="curtain" id="curtain" aria-hidden="true"></div>
+<main class="app"><header class="top"><b>💎 THE NEGIN QUEST</b><span id="status">مرحله ۱ از ۶</span><button type="button" class="sound" id="soundBtn" onclick="toggleSound()" aria-label="صدای بازی">🔇 صدا</button></header>
+<div class="frame"><div class="progress" aria-label="پیشرفت"><span id="progress"></span></div>
+<section class="page active" id="p1"><span class="tag">✨ یک دعوت‌نامه مخصوص حسام ✨</span><div class="negin big" data-mood="happy" role="img" aria-label="شخصیت کارتونی نگین با لباس ایرانی شیک"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><h1>آقای حسام، بالاخره پیدات شد!</h1><p class="lead">می‌گن توی پیدا کردن <strong class="em">نگین‌های کمیاب</strong> خیلی ماهری... 💎<br>ولی این بار قراره چندتا چالش حسابی بامزه داشته باشیم!<br>پایه‌ای ببینیم آخر این ماجرا چه خبره؟ 😉</p><button class="btn" onclick="go(2)">بزن بریم، خانوم مهندس! 🚀</button><p class="tiny">مدت بازی: حدود ۴ تا ۵ دقیقه • مخصوص موبایل 📱</p></section>
+<section class="page" id="p2"><span class="tag">🎭 مرحله ۱: بازجوییِ دوستانه</span><div class="negin small" data-mood="happy" role="img" aria-label="نگین"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><h2>ببینم واقعاً خودِ حسامی؟</h2><p>فقط حسام اصلی می‌تونه از پس این مأموریت بربیاد!</p><p class="question">به نظرت چقدر خوش‌شانسی که این بازی مخصوص تو ساخته شده؟</p><div class="choices"><button class="choice" onclick="identity(0,this)">خیلی! البته نگین خوش‌شانس‌تره 😎</button><button class="choice" onclick="identity(1,this)">هنوز معلوم نیست؛ بذار ببینم چی ساختی 😏</button><button class="choice" onclick="identity(2,this)">یکم استرس گرفتم، ولی پایه‌ام 😂</button></div><div class="bubble" id="identityReply" aria-live="polite">نگین منتظر جوابه... 👀</div><button class="btn hidden" id="idNext" onclick="go(3)">قبول شدم؟ بریم! 💫</button></section>
+<section class="page" id="p3"><span class="tag">🎮 مرحله ۲: شکار امتیاز</span><div class="negin small" data-mood="happy" role="img" aria-label="نگین"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><h2>ببینم چقدر دستت تنده!</h2><p>روی قلب‌ها ❤️ و الماس‌ها 💎 بزن؛ اخموها 🙄 امتیازت رو کم می‌کنن! توی ۲۰ ثانیه <strong>۸۰ امتیاز</strong> جمع کن.</p><div class="statline"><span>⏱️ زمان: <b id="time">۲۰</b></span><span>⭐ امتیاز: <b id="score">۰</b></span></div><div class="timebar"><i id="timebar"></i></div><div class="arena" id="arena" aria-label="محیط بازی"></div><div class="miniresult" id="gameMessage">شروع کن تا آیتم‌ها ظاهر بشن!</div><button class="btn" id="gameStart" onclick="startGame()">شروع بازی! 🎯</button><button class="btn hidden" id="gameNext" onclick="go(4)">مرحله بعد: رمز مرموز 🔐</button></section>
+<section class="page" id="p4"><span class="tag">🔐 مرحله ۳: گاوصندوق رازها</span><div class="negin small" data-mood="happy" role="img" aria-label="نگین"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><div class="vault" id="vault" aria-hidden="true"><div class="v-glow"></div><div class="v-gem">💎</div><div class="v-door"><div class="v-ring"></div><div class="v-dial"><i></i></div><div class="v-lock">🔒</div></div></div><h2>آقای جواهرشناس، یه رمز داریم!</h2><p>رمز چهاررقمی رو از این سرنخ‌ها بساز؛ عددها رو خودت پیدا کن! 🧠<br>👀 تعداد چشم‌های نگین<br>✍️ تعداد حروف اسم «حسام»<br>💎 تعداد نگینِ خاص این ماجرا<br>❤️ تعداد کلمه‌های «من دوستت دارم»</p><input class="pin" id="pin" type="text" inputmode="numeric" maxlength="4" autocomplete="off" placeholder="----" aria-label="رمز چهار رقمی"><button class="btn" onclick="unlock()">بازش کن! 🔓</button><div class="bubble" id="pinReply" aria-live="polite">یه سرنخ: عددها رو به ترتیب جمله کنار هم بذار 😌</div><button class="btn hidden" id="pinNext" onclick="go(5)">وارد دادگاه شو ⚖️</button></section>
+<section class="page" id="p5"><span class="tag">⚖️ مرحله ۴: دادگاهِ شیطنت</span><div class="negin small" data-mood="happy" role="img" aria-label="قاضی نگین"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><h2>دادگاه فوق‌محرمانه نگین!</h2><p id="courtIntro">آقای حسام! شما به جرم لبخند زدنِ مشکوک احضار شدی! 😂</p><p class="question" id="courtQuestion"></p><div class="choices" id="courtChoices"></div><div class="bubble" id="courtReply">قاضی نگین منتظر دفاعیات شماست 😌</div><button class="btn hidden" id="courtNext" onclick="nextCourt()">سؤال بعدی 😎</button></section>
+<section class="page" id="p6"><span class="tag">💌 پایان: راز اصلی نگین</span><div class="negin small" data-mood="happy" role="img" aria-label="نگین خوشحال"><img src="assets/negin-character.png" alt="" onerror="this.parentNode.classList.add('noimg')"><svg class="fb" viewBox="0 0 200 220" aria-hidden="true"><g class="wig"><ellipse cx="36" cy="106" rx="17" ry="32" fill="#ebe6f4"/><ellipse cx="164" cy="106" rx="17" ry="32" fill="#ebe6f4"/></g><path d="M30 222C30 172 60 160 100 160s70 12 70 62z" fill="#b3122b"/><rect x="88" y="138" width="24" height="26" rx="9" fill="#ffd9c2"/><path d="M80 162q20 24 40 0" fill="none" stroke="#ebbc69" stroke-width="4" stroke-linecap="round"/><path d="M100 176l8 9-8 12-8-12z" fill="#7fd6f5" stroke="#fff" stroke-width="1.5"/><path d="M38 112C30 36 170 36 162 112c-2 38-12 56-14 56H52c-2 0-12-18-14-56z" fill="#3b2236"/><circle cx="100" cy="108" r="56" fill="#ffd9c2"/><path d="M44 104C50 50 150 50 156 104c-26-18-46-34-56-44-10 10-30 26-56 44z" fill="#3b2236"/><ellipse cx="64" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="136" cy="128" rx="9" ry="5" fill="#ff8fb3" opacity=".6"/><ellipse cx="78" cy="112" rx="7" ry="9" fill="#2b1a2e"/><ellipse cx="122" cy="112" rx="7" ry="9" fill="#2b1a2e"/><circle cx="80" cy="108" r="2.5" fill="#fff"/><circle cx="124" cy="108" r="2.5" fill="#fff"/><path class="brow bl" d="M66 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="brow br" d="M110 96q12-6 24 0" fill="none" stroke="#3b2236" stroke-width="4" stroke-linecap="round"/><path class="m m-happy" d="M86 134q14 14 28 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-sad" d="M88 144q12-12 24 0" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/><path class="m m-open" d="M86 132q14 26 28 0z" fill="#b23a68"/><path class="m m-flat" d="M90 140h20" fill="none" stroke="#b23a68" stroke-width="4" stroke-linecap="round"/></svg><span class="badge" aria-hidden="true"></span></div><div class="confetti">🎁💖</div><h2>حسام... این بار بدون شوخی</h2><div class="letter"><p>تا اینجا کلی شیطنت کردیم و خندیدیم...<br>ولی می‌دونی چی از همه قشنگ‌تره؟ اینکه دو نفر دلشون بخواد <strong class="em">بیشتر همدیگه رو بشناسن</strong>، با هم حرف بزنن و خاطره‌های خوب بسازن. ❤️</p><p>حالا انتخاب با توئه، آقای حسام! 😌</p></div><p class="question">دوست داری این ماجراجویی رو در دنیای واقعی ادامه بدیم؟</p><div class="choices"><button class="choice" onclick="finalChoice('آره، با دل و جون! ❤️',this)">آره، با دل و جون! ❤️</button><button class="choice" onclick="finalChoice('بیا بیشتر با هم حرف بزنیم 🥰',this)">بیا بیشتر با هم حرف بزنیم 🥰</button><button class="choice" onclick="finalChoice('می‌خوام جواب خودمو بنویسم 💌',this,true)">می‌خوام جواب خودمو بنویسم 💌</button></div><textarea class="note" id="personalReply" placeholder="اگه دوست داری چند کلمه از خودت بنویس... (اختیاری)"></textarea><div class="bubble" id="finalMessage">می‌تونی جوابت رو انتخاب کنی یا با کلمات خودت بنویسی. 💗</div><button class="btn" onclick="sendTelegram()">💬 ارسال جواب برای نگین در تلگرام</button><p class="tiny hidden" id="tgLinkWrap"><a href="https://t.me/Nwgin2" target="_blank" rel="noopener noreferrer">اگه تلگرام باز نشد، اینجا بزن</a></p><p class="tiny">برای ارسال، متن پاسخ کپی می‌شود و چت تلگرام نگین باز می‌شود؛ آنجا متن را Paste و Send کن. هیچ جوابی خودکار ارسال نمی‌شود.</p><button class="btn alt" onclick="restart()">🔁 دوباره بازی کنیم؟</button></section>
+</div><div class="foot">ساخته شده با ذوق و یک عالمه شیطنت 💻💗</div></main>
+<script>
+'use strict';
+let page=1,score=0,time=20,timer=null,spawner=null,courtIndex=0,courtAnswers=[],chosen='',soundOn=false,audioCtx=null,pinTries=0,moodTimer=null,lastCheer=0;
+const $=id=>document.getElementById(id);
+const qs=s=>document.querySelectorAll(s);
+const FA='۰۱۲۳۴۵۶۷۸۹',AR='٠١٢٣٤٥٦٧٨٩';
+const toFa=n=>String(n).replace(/\d/g,d=>FA[d]);
+const toEn=s=>s.replace(/[۰-۹]/g,d=>FA.indexOf(d)).replace(/[٠-٩]/g,d=>AR.indexOf(d));
+const TG_URL='https://t.me/Nwgin2';
+const PIN='2413';
+
+/* ---- حالت‌های نگین ---- */
+const BADGES={happy:'',cheer:'👏',love:'💖',sad:'😤',judge:'⚖️'};
+const PAGE_MOOD={1:'happy',2:'happy',3:'happy',4:'happy',5:'judge',6:'love'};
+function setMood(mood,ms){
+  clearTimeout(moodTimer);
+  qs('.negin').forEach(el=>{
+    el.removeAttribute('data-mood');void el.offsetWidth;
+    el.setAttribute('data-mood',mood);
+    el.querySelector('.badge').textContent=BADGES[mood];
+  });
+  if(ms)moodTimer=setTimeout(()=>setMood(PAGE_MOOD[page]),ms);
+}
+
+/* ---- ناوبری ---- */
+let goToken=0;
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function go(n){
+  stopGame();page=n;const tok=++goToken;
+  const cur=$('curtain');cur.classList.remove('play');void cur.offsetWidth;cur.classList.add('play');
+  setTimeout(()=>{
+    if(tok!==goToken)return;
+    qs('.page').forEach(e=>e.classList.toggle('active',e.id==='p'+n));
+    $('progress').style.width=(n/6*100)+'%';
+    $('status').textContent='مرحله '+toFa(n)+' از ۶';
+    window.scrollTo({top:0});
+    if(n===5){courtIndex=0;courtAnswers=[];renderCourt()}
+    if(n===6)burst();
+    setMood(PAGE_MOOD[n]);
+  },REDUCE?0:430);
+}
+function floatText(b,v){const t=document.createElement('span');t.className='pts '+(v<0?'neg':'pos');t.textContent=(v>0?'+':'−')+toFa(Math.abs(v));t.style.left=(b.offsetLeft+12)+'px';t.style.top=b.offsetTop+'px';$('arena').appendChild(t);setTimeout(()=>t.remove(),800)}
+function shakeFrame(){const f=document.querySelector('.frame');f.classList.remove('hit');void f.offsetWidth;f.classList.add('hit')}
+function vaultShake(){const v=$('vault');v.classList.remove('wrong');void v.offsetWidth;v.classList.add('wrong')}
+/* ذرات طلایی پس‌زمینه */
+(function(){
+  const c=$('fx'),x=c.getContext('2d');let w,h;const ps=[];
+  const size=()=>{w=c.width=innerWidth;h=c.height=innerHeight};size();addEventListener('resize',size);
+  const mk=init=>({x:Math.random()*w,y:init?Math.random()*h:h+10,r:Math.random()*2.2+.6,v:Math.random()*.5+.15,d:Math.random()*6.28,c:Math.random()<.25?'215,38,61':'230,182,85'});
+  for(let i=0;i<55;i++)ps.push(mk(true));
+  function tick(){x.clearRect(0,0,w,h);
+    for(const p of ps){p.y-=p.v;p.d+=.012;p.x+=Math.sin(p.d)*.3;if(p.y<-10)Object.assign(p,mk(false));
+      x.beginPath();x.shadowBlur=8;x.shadowColor='rgba('+p.c+',.9)';x.fillStyle='rgba('+p.c+','+(.25+.55*Math.abs(Math.sin(p.d*2)))+')';x.arc(p.x,p.y,p.r,0,6.283);x.fill()}
+    requestAnimationFrame(tick)}
+  if(!REDUCE)tick();
+})();
+/* ---- صدا ---- */
+function beep(){
+  if(!soundOn)return;
+  try{
+    audioCtx=audioCtx||new (window.AudioContext||window.webkitAudioContext)();
+    const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();
+    osc.connect(gain);gain.connect(audioCtx.destination);osc.frequency.value=660;
+    gain.gain.setValueAtTime(.04,audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+.13);
+    osc.start();osc.stop(audioCtx.currentTime+.14);
+  }catch(e){}
+}
+function toggleSound(){soundOn=!soundOn;$('soundBtn').textContent=soundOn?'🔊 صدا':'🔇 صدا';if(soundOn)beep()}
+
+/* ---- مرحله ۱: بازجویی ---- */
+function identity(i,btn){
+  qs('#p2 .choice').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');
+  $('identityReply').textContent=['عههه! اعتمادبه‌نفست رو دوست دارم، آقای حسام! 😂💎','اینااا! اول امتحان می‌کنی بعد نظر می‌دی؟ زرنگی! 😏','استرس نداره بابا! نهایتاً یه عالمه می‌خندیم 😂❤️'][i];
+  $('idNext').classList.remove('hidden');
+  setMood(['love','happy','cheer'][i],1800);beep();
+}
+
+/* ---- مرحله ۲: بازی امتیاز ---- */
+function stopGame(){clearInterval(timer);clearInterval(spawner);timer=null;spawner=null}
+function startGame(){
+  stopGame();score=0;time=20;
+  $('score').textContent=toFa(0);$('time').textContent=toFa(20);$('timebar').style.transition='none';$('timebar').style.width='100%';void $('timebar').offsetWidth;$('timebar').style.transition='';
+  $('gameNext').classList.add('hidden');$('gameStart').classList.add('hidden');
+  $('gameMessage').textContent='زود باش حسام! 😎';$('arena').innerHTML='';
+  spawn();spawner=setInterval(spawn,550);
+  timer=setInterval(()=>{time--;$('time').textContent=toFa(Math.max(time,0));$('timebar').style.width=(Math.max(time,0)/20*100)+'%';if(time<=0)finishGame()},1000);
+}
+function spawn(){
+  if(page!==3||!timer)return;
+  const area=$('arena');
+  const types=[['❤️',10,'g'],['💎',20,'gem'],['💋',15,'g'],['🙄',-10,'bad']];
+  const item=types[Math.floor(Math.random()*types.length)];
+  const b=document.createElement('button');
+  b.type='button';b.className='item '+item[2];b.textContent=item[0];
+  b.setAttribute('aria-label',item[0]+' '+toFa(Math.abs(item[1]))+(item[1]<0?' امتیاز منفی':' امتیاز'));
+  b.style.left=Math.random()*Math.max(0,area.clientWidth-60)+'px';
+  b.style.top=Math.random()*Math.max(0,area.clientHeight-60)+'px';
+  const hit=()=>{
+    if(!timer)return;
+    score=Math.max(0,score+item[1]);$('score').textContent=toFa(score);floatText(b,item[1]);b.remove();beep();
+    if(item[1]<0){setMood('sad',900);shakeFrame()}
+    else if(Date.now()-lastCheer>700){lastCheer=Date.now();setMood('cheer',700)}
+    if(score>=80)finishGame(true);
+  };
+  b.onpointerdown=e=>{e.preventDefault();hit()};
+  b.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();hit()}};
+  area.appendChild(b);setTimeout(()=>b.remove(),1400);
+}
+function finishGame(win=false){
+  stopGame();$('arena').innerHTML='';
+  $('gameStart').classList.remove('hidden');$('gameStart').textContent='دوباره امتحان کن 🔄';
+  const passed=win||score>=80;
+  $('gameMessage').textContent=passed?'ایول حسام! مرحله رو ترکوندی! 😍🏆':'این دفعه '+toFa(score)+' امتیاز گرفتی! یه دور دیگه بزنی می‌بری 😏';
+  if(passed){$('gameStart').classList.add('hidden');$('gameNext').classList.remove('hidden');burst();setMood('love',2200)}
+  else setMood('sad',1500);
+}
+
+/* ---- مرحله ۳: گاوصندوق ---- */
+function unlock(){
+  const v=toEn($('pin').value.trim());
+  if(v===PIN){
+    $('pinReply').textContent='تق! 🔓 آفرین! رمز درست بود؛ راز بعدی منتظرته 💎';
+    $('pinNext').classList.remove('hidden');$('vault').classList.add('open');setMood('cheer',2000);burst();beep();
+  }else{
+    pinTries++;
+    $('pinReply').textContent=pinTries>=3
+      ?'نزدیک شدی! 😉 ترتیب سرنخ‌ها مهمه (چشم‌ها، حروف، نگین، کلمه‌ها). رمز با ۲ شروع می‌شه.'
+      :'نههه! 😜 ترتیب سرنخ‌ها مهمه: اول چشم‌ها، بعد حروف، بعد نگین، آخر کلمه‌ها.';
+    setMood('sad',1200);vaultShake();
+  }
+}
+
+/* ---- مرحله ۴: دادگاه ---- */
+const courts=[
+{q:'اگر نگین از چیزی ناراحت باشه، چیکار می‌کنی؟ 🥺',a:['باهاش آروم و مهربون حرف می‌زنم 💗','یه شوخی بامزه می‌کنم تا بخنده 😂','می‌پرسم چی لازم داره و کنارش می‌مونم 🤍'],r:'حکم دادگاه: تلاش برای حال خوب نگین، قابل تقدیره! 😌'},
+{q:'قرارِ ایده‌آل برای ساختن یه خاطره خوب؟ ✨',a:['یه کافه دنج و کلی حرف ☕','یه گردش هیجان‌انگیز و خنده‌دار 🎡','یه سورپرایز کوچولوی فکرشده 🎁'],r:'قاضی نگین با لبخند یادداشت کرد... انتخاب جالبی بود! 😏'},
+{q:'برای به‌دست آوردن اعتماد کسی چی مهم‌تره؟ 💎',a:['صداقت و احترام 🤝','توجه و وقت گذاشتن 💌','همه‌شون، در کنار هم ❤️'],r:'پرونده بسته شد! تو حق ورود به مرحله آخر رو داری 😍'}
+];
+function renderCourt(){
+  const c=courts[courtIndex];
+  $('courtQuestion').textContent=c.q;$('courtChoices').innerHTML='';
+  c.a.forEach(a=>{
+    const b=document.createElement('button');b.type='button';b.className='choice';b.textContent=a;
+    b.onclick=()=>{
+      qs('#courtChoices .choice').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');
+      courtAnswers[courtIndex]=a;$('courtReply').textContent=c.r;
+      $('courtNext').classList.remove('hidden');
+      $('courtNext').textContent=courtIndex===2?'بریم سراغ سورپرایز نهایی 🎁':'سؤال بعدی 😎';
+      setMood('cheer',1200);beep();
+    };
+    $('courtChoices').appendChild(b);
+  });
+  $('courtReply').textContent='قاضی نگین منتظر دفاعیات شماست 😌';$('courtNext').classList.add('hidden');
+}
+function nextCourt(){if(courtIndex<2){courtIndex++;renderCourt()}else go(6)}
+
+/* ---- مرحله ۵: پیام نهایی ---- */
+function finalChoice(answer,btn,custom){
+  chosen=custom?'':answer;
+  qs('#p6 .choice').forEach(b=>b.classList.remove('selected'));btn.classList.add('selected');
+  if(custom){$('finalMessage').textContent='عالیه! جوابت رو توی کادر بنویس، بعد از تلگرام بفرستش 💌';$('personalReply').focus()}
+  else $('finalMessage').textContent='انتخابت ثبت شد (فقط روی همین گوشی). حالا می‌تونی از تلگرام بفرستیش! 💌';
+  beep();
+}
+function composeAnswer(){
+  const note=$('personalReply').value.trim(),court=courtAnswers.filter(Boolean);
+  if(!chosen&&!note)return '';
+  return 'سلام نگین! 😌💎\nمن بازی «راز نگین» رو تا آخر رفتم!\n'
+    +(court.length?'دفاعیاتم در دادگاه: '+court.join(' | ')+'\n':'')
+    +(chosen?'جوابم: '+chosen+'\n':'')
+    +(note?'حرف دلم: '+note+'\n':'')+'💗';
+}
+function legacyCopy(text){
+  const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');
+  t.style.cssText='position:fixed;opacity:0;top:0';document.body.appendChild(t);t.select();
+  let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok;
+}
+function copyText(text){
+  if(navigator.clipboard&&window.isSecureContext)
+    return navigator.clipboard.writeText(text).then(()=>true,()=>legacyCopy(text));
+  return Promise.resolve(legacyCopy(text));
+}
+function sendTelegram(){
+  const text=composeAnswer();
+  if(!text){$('finalMessage').textContent='اول یک گزینه رو انتخاب کن یا جوابت رو بنویس 😘';return}
+  /* کپی و بازکردن لینک هر دو همزمان با لمس کاربر شروع می‌شن تا مرورگر موبایل بلاکشون نکنه */
+  const copied=copyText(text);
+  const a=document.createElement('a');a.href=TG_URL;a.target='_blank';a.rel='noopener noreferrer';
+  document.body.appendChild(a);a.click();a.remove();
+  copied.then(ok=>{
+    $('finalMessage').textContent=ok
+      ?'متن کپی شد! در تلگرام نگین، Paste و بعد Send رو بزن 💌'
+      :'کپی خودکار ممکن نشد؛ این متن رو دستی کپی کن و تو تلگرام بفرست:\n\n'+text;
+    $('tgLinkWrap').classList.remove('hidden');
+  });
+}
+
+/* ---- افکت‌ها و شروع دوباره ---- */
+function burst(){
+  for(let i=0;i<20;i++)setTimeout(()=>{
+    const e=document.createElement('span');e.className='spark';
+    e.textContent=['❤️','✨','💎','🌟','🌹'][Math.floor(Math.random()*4)];
+    e.style.left=Math.random()*100+'vw';e.style.top='100vh';document.body.appendChild(e);
+    setTimeout(()=>e.remove(),3100);
+  },i*80);
+}
+function restart(){
+  chosen='';courtAnswers=[];pinTries=0;score=0;$('vault').classList.remove('open');$('timebar').style.width='100%';
+  $('personalReply').value='';$('pin').value='';
+  $('pinNext').classList.add('hidden');$('pinReply').textContent='یه سرنخ: عددها رو به ترتیب سرنخ‌ها کنار هم بذار 😌';
+  $('idNext').classList.add('hidden');$('identityReply').textContent='نگین منتظر جوابه... 👀';
+  $('gameNext').classList.add('hidden');$('gameStart').classList.remove('hidden');$('gameStart').textContent='شروع بازی! 🎯';
+  $('gameMessage').textContent='شروع کن تا آیتم‌ها ظاهر بشن!';$('score').textContent=toFa(0);$('time').textContent=toFa(20);$('arena').innerHTML='';
+  $('finalMessage').textContent='می‌تونی جوابت رو انتخاب کنی یا با کلمات خودت بنویسی. 💗';$('tgLinkWrap').classList.add('hidden');
+  qs('.choice').forEach(b=>b.classList.remove('selected'));
+  go(1);
+}
+$('pin').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+</script></body></html>
